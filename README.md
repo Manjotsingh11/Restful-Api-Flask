@@ -73,10 +73,46 @@ The API will be accessible at http://localhost:5000.
 - GET /api/notes/search?q=:query: Search for notes based on keywords for the authenticated user.
 - POST /api/notes/:id/share: Share a note with another user for the authenticated user.
 
-## Testing
-- Run the unit tests:
-  ```bash
-  python test_app.py
+## Running Tests
+
+To run the unit tests for this project, follow these steps:
+
+1. Ensure you have Python installed on your machine. If not, you can download it from [python.org](https://www.python.org/downloads/).
+
+2. Create a virtual environment (optional but recommended):
+
+    ```bash
+    python -m venv venv
+    ```
+
+3. Activate the virtual environment:
+
+    - On Windows:
+
+        ```bash
+        .\venv\Scripts\activate
+        ```
+
+    - On macOS/Linux:
+
+        ```bash
+        source venv/bin/activate
+        ```
+
+4. Install the required dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5. Run the tests:
+
+    ```bash
+    python -m unittest discover
+    ```
+
+This will execute the unit tests, and you should see the test results in the terminal.
+
 
 ## Rate Limiting and Request Throttling
 The API implements rate limiting and request throttling to handle high traffic. The details are specified in the application code.
