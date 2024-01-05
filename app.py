@@ -5,15 +5,12 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from bson import ObjectId, regex
 from flask_limiter import Limiter
-from flask_limiter.util import get_remote_address
-
-
 
 
 app = Flask(__name__)
 
 app.config['MONGO_URI'] = 'mongodb://localhost:27017/secure-scalable-db'
-app.config['JWT_SECRET_KEY'] = '99e228c4cb834f7dee9d5a905d62b5ff998ce228bd693193'
+app.config['JWT_SECRET_KEY'] = 'secret_key' # Add your secret key
 
 
 
