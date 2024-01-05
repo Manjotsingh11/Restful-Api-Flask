@@ -41,11 +41,11 @@ Make sure you have Python and MongoDB installed on your system.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Manjotsingh11/Speer-Assessment.git
+   git clone https://github.com/Manjotsingh11/Restful-Api-Flask.git
 
 1. Change into the project directory:
    ```bash
-   cd Speer-Assessment
+   cd Restful-Api-Flask
 
 2. Install dependencies:
    ```bash
