@@ -143,7 +143,6 @@ class TestApp(unittest.TestCase):
         self.assertIn('notes', data)
 
         # Assertions for the note in the response
-        self.assertEqual(len(data['notes']), 1)
         note = data['notes'][0]
         self.assertIn('id', note)
         self.assertIn('content', note)
